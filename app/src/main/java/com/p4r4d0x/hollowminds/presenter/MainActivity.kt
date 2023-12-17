@@ -13,8 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("ALRALR","Boolean ${resources.getBoolean(R.bool.portrait_only)}")
-
         if(resources.getBoolean(R.bool.portrait_only)){
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         }
